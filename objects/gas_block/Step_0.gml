@@ -14,7 +14,12 @@ for (var c = 0; c < array_length(colide); c += 1) {
 	if (mod_dx <= AFFECT_X && mod_dy <= AFFECT_Y){
 		obj.BLOCK_ID = id
 		
-		obj.y += global.GRAVITY
+		if (obj.y <= room_height){
+			obj.y += global.GRAVITY
+		}else{
+			obj.y = room_height
+			global.GRAVITY = 0
+		}
 		
 	}else{
 		if (obj.BLOCK_ID == id){

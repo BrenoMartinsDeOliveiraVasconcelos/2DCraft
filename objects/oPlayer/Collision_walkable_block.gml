@@ -1,1 +1,0 @@
-y = other.sprite_height * -1

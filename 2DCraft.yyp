@@ -38,7 +38,6 @@
     {"id":{"name":"gas_block","path":"objects/gas_block/gas_block.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
-    {"id":{"name":"walkable_block","path":"objects/walkable_block/walkable_block.yy",},},
     {"id":{"name":"spawn","path":"rooms/spawn/spawn.yy",},},
     {"id":{"name":"air","path":"sprites/air/air.yy",},},
     {"id":{"name":"noblock","path":"sprites/noblock/noblock.yy",},},

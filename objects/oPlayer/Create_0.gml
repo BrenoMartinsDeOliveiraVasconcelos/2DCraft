@@ -1,5 +1,6 @@
 WALK_X_KEY_SUB = ord("A")
 WALK_X_KEY_PLUS = ord("D")
+JUMP_KEY = vk_space
 
 SPEED = 1
 
@@ -12,3 +13,7 @@ WALKABLE_BLOCK_ID = 0
 Y_INITIAL = y
 
 PHYSICS_ENABLED = false
+
+IS_JUMPING = false
+JUMP_PHASE = -1
+JUMP_MAX = 20

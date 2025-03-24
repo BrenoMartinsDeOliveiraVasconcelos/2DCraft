@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oGame",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"walkable_block",
+  "eventList":[],
   "managed":true,
-  "name":"oGame",
+  "name":"walkable_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -24,13 +21,21 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":8.0,"y":0.0,},
+    {"x":8.0,"y":8.0,},
+    {"x":0.0,"y":8.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"noblock",
+    "path":"sprites/noblock/noblock.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

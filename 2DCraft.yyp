@@ -34,12 +34,15 @@
   },
   "name":"2DCraft",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"game","path":"rooms/game/game.yy",},},
+    {"id":{"name":"player","path":"sprites/player/player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"game","path":"rooms/game/game.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

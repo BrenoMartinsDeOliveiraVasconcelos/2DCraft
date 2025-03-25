@@ -1,7 +1,7 @@
 window_set_size(768, 768)
 
 // Numero de chunks para gerar logo de cara
-global.CHUNKS = 16
+global.CHUNKS = 4
 
 global.GRAVITY = 1
 

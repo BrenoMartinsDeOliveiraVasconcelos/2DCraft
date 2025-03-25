@@ -16,7 +16,8 @@ if (global.PLAYER.x > room_width or global.PLAYER.x < 0) {
         var map_y = global.room_insts[? yval]; // Mapa X para esta linha Y
 
         // Iterar sobre as colunas no mapa X
-        var x_keys = ds_map_keys_to_array(global.room_insts) ; // Obter todas as chaves X
+        var x_keys = ds_map_keys_to_array(map_y) ; // Obter todas as chaves X
+		//show_message(string(array_length(x_keys)))
         for (var j = 0; j < array_length(x_keys); j++) {
             var xval = x_keys[j];
             var block = map_y[? xval];

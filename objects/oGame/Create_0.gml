@@ -4,7 +4,7 @@ global.GRAVITY = 1
 
 global.room_insts = ds_map_create() // Mapa com as instancias da sala
 
-var sprite_size = 8 // Tamanho usual
+sprite_size = 8 // Tamanho usual
 
 // Gerar player!!!!!
 global.PLAYER  = instance_create_layer(16, 16, "Player", oPlayer)
@@ -16,7 +16,7 @@ global.PLAYER  = instance_create_layer(16, 16, "Player", oPlayer)
 for (var yval = 0; yval<= room_height; yval+=sprite_size){
 	var instances_x = ds_map_create()
 	// Para cada linha
-	for (var xval = 0; xval <= room_width; xval+=sprite_size){
+	for (var xval = 0; xval <= room_width*2; xval+=sprite_size){
 		
 		if (yval % sprite_size == 0 && xval % sprite_size == 0){
 			instance = instance_create_layer(xval, yval, "Blocks", gas_block)
@@ -24,14 +24,14 @@ for (var yval = 0; yval<= room_height; yval+=sprite_size){
 			instance.sprite_index = air
 			instances_x[? xval] = instance
 		}
-		global.room_insts[? yval] = instances_x
 	}
+	global.room_insts[? yval] = instances_x
 }
 
 
 // Adicionar uns blocos só por teste
 
-for (var xval = 0; xval <= room_width; xval +=sprite_size){
+for (var xval = 0; xval <= room_width*2; xval +=sprite_size){
 	if (xval % sprite_size == 0){
 		inst = global.room_insts[? 128][? xval]
 		inst.TYPE = 1

@@ -6,6 +6,7 @@ global.CHUNKS = 4
 global.GRAVITY = 1
 
 global.room_insts = ds_map_create() // Mapa com as instancias da sala
+global.standby_blocks = ds_map_create() // SAlva blocos fora do cenário para ser adicionados depois se necessário (com o X actual do player)
 
 sprite_size = 8 // Tamanho usual
 
